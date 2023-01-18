@@ -6,7 +6,7 @@
 
   <script>
     function sendRequest() {
-        fetch('https://github.com/login/oauth/authorize', {
+        fetch('https://api.github.com/login/oauth/authorize', {
             method: "GET",
             client_id: "7948650136fa2c19239b",
         }).then(console.log("Redirected to GitHub"))
