@@ -5,12 +5,8 @@
   <button onClick="sendRequest()">Login with GitHub</button>
 
   <script>
-    function sendRequest() {
-        fetch('https://api.github.com/login/oauth/authorize', {
-            method: "GET",
-            client_id: "7948650136fa2c19239b",
-        }).then(console.log("Redirected to GitHub"))
-    }
+    client_id = "7948650136fa2c19239b";
+    location.href ="https://github.com/login/oauth/authorize?client_id="+client_id;
   </script>
 
 </body>
