@@ -9,6 +9,9 @@
         fetch('https://github.com/login/oauth/authorize', {
             method: "GET",
             client_id: "7948650136fa2c19239b",
+            headers: {
+             "Access-Control-Allow-Origin": "*"
+            }
         }).then(console.log("Redirected to GitHub"))
     }
   </script>
