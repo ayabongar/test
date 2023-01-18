@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <button onClick="sendRequest()">Login with GitHub</button>
+
+  <script>
+    function sendRequest() {
+        fetch('https://github.com/login/oauth/authorize', {
+            method: "GET",
+        }).then(console.log("Redirected to GitHub"))
+    }
+  </script>
+
+</body>
+
+</html>
